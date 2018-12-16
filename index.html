@@ -8,6 +8,8 @@
       type="text/css"
     />
     <script src="//unpkg.com/simple-dropzone@0.5.3/dist/simple-dropzone.min.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <style>
       .sans {
         font-family: sans-serif;
@@ -21,13 +23,28 @@
       p {
         line-height: 1.5em;
       }
+      
+      .right {
+        float: right;
+        margin: 8px;
+      }
     
     </style>
   </head>
 
   <body>
-    <div class='sans' id="app">
-      <h1>glTF JSON explorer</h1>
+    <div class="sans" id="app">
+      <h1>glTF JSON explorer
+        <!-- View Source Button -->
+        <a href="https://glitch.com/edit/#!/gltf-json-explorer">
+          <img class="right" src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fview-source%402x.png?1513093958802" alt="view source button" aria-label="view source" height="33">
+        </a>
+        <div class="right">
+          <!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/andreasplesch/gltf-json-explorer/issues" data-size="large" data-show-count="true" aria-label="Issue andreasplesch/gltf-json-explorer on GitHub">Issue</a>
+        </div>
+        
+      </h1>
       <p>
         Drop gltf file or folder onto page, or use button to choose from file dialog. Data will not be uploaded to any server but will take time to process. 
         Then expand accessors node in json viewer. There will be new 'extras' keys for decoded binary accessor data.
