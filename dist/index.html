@@ -1,15 +1,10 @@
 <html>
   <head>
     <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.26.3/jsoneditor.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.26.3/jsoneditor.min.css" rel="stylesheet" type="text/css">
     <script src="//unpkg.com/simple-dropzone@0.5.3/dist/simple-dropzone.min.js"></script>
-    <style>
-      .sans {
+    <style>.sans {
         font-family: sans-serif;
         margin: 32px        
       }
@@ -20,26 +15,24 @@
 
       p {
         line-height: 1.5em;
-      }
-    
-    </style>
+      }</style>
   </head>
 
   <body>
-    <div class='sans' id="app">
+    <div class="sans" id="app">
       <h1>glTF JSON explorer</h1>
       <p>
         Drop gltf file or folder onto page, or use button to choose from file dialog. Data will not be uploaded to any server but will take time to process. 
         Then expand accessors node in json viewer. There will be new 'extras' keys for decoded binary accessor data.
       </p>
       
-      <input type="file" id="input" multiple="multiple"/>
+      <input type="file" id="input" multiple="multiple">
       
       <div id="jsoneditor"></div>
     
     </div>
     
-    <script src="src/index.ts"></script>
+    <script src="/src.f10117fe.js"></script>
     
   </body>
 </html>
